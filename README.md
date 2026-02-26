@@ -1,19 +1,21 @@
 # 🚦 Intelligent Traffic Sign Recognition System
-## CNN-Based Multi-Class Image Classification
+### CNN-Based Multi-Class Image Classification
 
 ---
 
 ## 📌 Project Overview
-This project implements a Convolutional Neural Network (CNN) to classify traffic sign images using the German Traffic Sign Recognition Benchmark (GTSRB) dataset.  
-The system automatically identifies traffic signs from images and demonstrates the application of deep learning in intelligent transportation systems.  
-This implementation serves as the baseline model (Implementation 1) for further optimization and enhancement.
+This project implements a **Convolutional Neural Network (CNN)** to classify traffic sign images using the **German Traffic Sign Recognition Benchmark (GTSRB)** dataset.
+
+- Automatically identifies traffic signs from images  
+- Demonstrates deep learning in intelligent transportation systems  
+- Serves as the **baseline model (Implementation 1)** for further optimization  
 
 ---
 
 ## 👥 Team – SensoryX
 
 | Name | Registration Number | Index No |
-|------|---------------------|----------|
+|------|--------------------|----------|
 | L.B. K. B. Sewwandi | ICT/2022/019 | 5626 |
 | H. T. D. Fernando | ICT/2022/020 | 5627 |
 | K. D. A. Nethmini | ICT/2022/026 | 5633 |
@@ -35,20 +37,19 @@ This implementation serves as the baseline model (Implementation 1) for further 
 - **Image Size:** 64 × 64 pixels  
 
 ### Dataset Split
-
 - Training: 70% (6836 images)  
 - Validation: 10%  
 - Test: 20% (1709 images)  
 
-The test dataset was not used during training to ensure unbiased evaluation.
+> The test dataset was not used during training to ensure unbiased evaluation.
 
 ---
 
 ## 🖼️ Image Preprocessing
 
-- Image resizing to 64 × 64  
-- Pixel normalization: [0, 255] → [0, 1]  
-- Data augmentation to improve generalization  
+- Image resizing to **64 × 64**
+- Pixel normalization: **[0, 255] → [0, 1]**
+- Data augmentation to improve generalization
 
 These steps ensure stable training and better performance.
 
@@ -58,12 +59,12 @@ These steps ensure stable training and better performance.
 
 The CNN model consists of:
 
-- 3 Convolutional layers (32, 64, 128 filters)  
-- MaxPooling layers  
-- Flatten layer  
-- Dense layer (256 neurons, ReLU)  
-- Dropout (0.5)  
-- Output layer (Softmax – 42 classes)  
+- 3 Convolutional layers (32, 64, 128 filters)
+- MaxPooling layers
+- Flatten layer
+- Dense layer (256 neurons, ReLU)
+- Dropout (0.5)
+- Output layer (Softmax – 42 classes)
 
 ### Model Compilation
 
@@ -84,7 +85,7 @@ The CNN model consists of:
 ## 📊 Results
 
 | Metric | Value |
-|--------|-------|
+|-------|-------|
 | Training Accuracy | 99.24% |
 | Training Loss | 0.0286 |
 | Test Accuracy | 98.94% |
@@ -98,18 +99,12 @@ The model demonstrates strong generalization with minimal overfitting.
 - Confusion Matrix generated  
 - Training vs Validation Accuracy plotted  
 - Training vs Validation Loss plotted  
-
-Minor temporary overfitting observed but not sustained.
+- Minor temporary overfitting observed but not sustained
 
 ---
 
-## 💾 Model Saving
 
-- Format: `.h5`  
-- Save Path:  
-  `/content/drive/MyDrive/TrafficSignProject/traffic_sign_model.h5`
-
-The saved model can be reused for inference or deployment.
+- The saved model can be reused for inference or deployment.
 
 ---
 
@@ -143,7 +138,15 @@ Future implementations can incorporate transfer learning and architecture improv
 
 ## 🚀 Conclusion
 
-A functional CNN-based traffic sign recognition system was successfully developed.  
-This baseline model establishes a strong foundation for further performance optimization and deployment in intelligent transportation applications.
+- A functional CNN-based traffic sign recognition system was successfully developed  
+- Establishes a strong baseline model  
+- Provides foundation for optimization and deployment in intelligent transportation systems  
 
 ---
+
+---
+
+## 💾 Model Saving
+
+- Format: `.h5`  
+- Save Path:  
